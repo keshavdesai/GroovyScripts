@@ -34,7 +34,7 @@ def Message processData(Message message) {
 			}
 		}
 		
-		message.setProperty("filterCrit",odataquery);
+		message.setProperty("filterCrit",odataquery.join());
 		
 		return message;
 	}
