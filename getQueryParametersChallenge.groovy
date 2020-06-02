@@ -1,5 +1,6 @@
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
+import java.net.URLDecoder;
 
 
 def Message processData(Message message) {
@@ -14,6 +15,7 @@ def Message processData(Message message) {
 		
 		String[] query_string = query_parameter.split('&');
 		String[] key_val;
+		def urldecoder = new URLDecoder();
 		def odataquery = [];
 		for (String pair:query_string){
 
@@ -21,7 +23,8 @@ def Message processData(Message message) {
 			try{
 
 				if(!key_val[1].isNumber()){
-					key_val[1] = "'"+key_val[1]+"'";
+					
+					key_val[1] = "'"+urldecoder.decode(key_val[1],"UTF-8")+"'";
 				}
 				if(odataquery.size()>0){
 					odataquery.add(" and ");
@@ -39,4 +42,3 @@ def Message processData(Message message) {
 		return message;
 	}
 }
-
