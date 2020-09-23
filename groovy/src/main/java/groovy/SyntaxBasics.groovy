@@ -17,3 +17,4 @@ println("brackets make me print in a new line")
 def somestr = 'somestring'
 println "$somestr".getClass()
 println somestr.getClass()
+
