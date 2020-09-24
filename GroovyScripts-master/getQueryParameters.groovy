@@ -24,3 +24,5 @@ def Message processData(Message message) {
 		return message;
 	}
 }
+
+print processData(new Message())
