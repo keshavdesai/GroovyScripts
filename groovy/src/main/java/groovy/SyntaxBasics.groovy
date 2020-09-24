@@ -105,12 +105,3 @@ println InterImpl.interstr
 	println e.message
 }
 
-
-println map.get('name')
-
-println map.get('name')
-
-println "$somestr".getClass()
-println somestr.getClass()
-
-
