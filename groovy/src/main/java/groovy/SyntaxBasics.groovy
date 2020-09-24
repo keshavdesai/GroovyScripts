@@ -27,10 +27,13 @@ println somestr.getClass()
  * Some class groovydoc for Foo
  */
 class Foo {
+	
 	/**@
 	 * Some method groovydoc for bar
 	 */
-	void bar() {
+    private String pri = 'pri str'
+	private String bar() {
+		return pri
 	}
 }
 
@@ -56,8 +59,58 @@ println map
 
 println map.get('name')
 
+// why dont the private methods - see bar() - work?
+def f = new Foo()
+println f.bar()
+try {
+println Foo.pri //private attributes work 
+}catch (e) {
+	println e.message
+}
+
+
+interface Inter{
+	String interstr = 'inter str'
+	String getter()
+	String setter(String)
+}
+
+class InterImpl implements Inter{
+	
+	private String interstr
+
+	public String getter() {
+		// TODO Auto-generated method stub
+		return interstr;
+	}
+
+	public String setter(str) {
+		// TODO Auto-generated method stub
+		interstr = str
+		return "$str set as value";
+	}
+	
+}
+
+def inter = new InterImpl()
+
+println 'interstr before : ' + inter.getter()
+inter.setter('djioejoijo')
+println 'interstr after : ' + inter.getter()
+
+try {
+println Inter.interstr
+println InterImpl.interstr
+}catch (e) {
+	println e.message
+}
+
+
+println map.get('name')
+
 println map.get('name')
 
 println "$somestr".getClass()
 println somestr.getClass()
+
 
