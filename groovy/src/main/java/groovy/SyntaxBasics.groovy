@@ -15,6 +15,7 @@ println("brackets make me print in a new line")
 
 //single quotes, double quotes dont matter?	apparently String and GString
 def somestr = 'somestring'
+
 println "$somestr".getClass() //use $ as prefix to variable when being used 
                               //inside quotes - avoid concatenation of str
 println somestr.getClass()
@@ -53,3 +54,8 @@ map.put('key1', 'val1')
 println map
 
 println map.get('name')
+
+println "$somestr".getClass()
+println somestr.getClass()
+
+
