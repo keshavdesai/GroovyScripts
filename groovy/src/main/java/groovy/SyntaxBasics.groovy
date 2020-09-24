@@ -53,9 +53,11 @@ map.put('key1', 'val1')
 
 println map
 
+
+println map.get('name')
+
 println map.get('name')
 
 println "$somestr".getClass()
 println somestr.getClass()
-
 
