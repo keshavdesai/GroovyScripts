@@ -1,0 +1,14 @@
+import com.sap.gateway.ip.core.customdev.util.Message;
+import java.util.HashMap;
+def Message processData(Message message) {
+    //Body 
+       def body = message.getBody(java.lang.String);
+       
+       def log = messageLogFactory.getMessageLog(message);
+       
+       if(log!=null){
+           log.addAttachmentAsString("payload",body,"text/plain");
+       }
+       
+       return message;
+}
