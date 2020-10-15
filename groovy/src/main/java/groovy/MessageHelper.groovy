@@ -105,7 +105,7 @@ class MessageHelper implements Message {
 	}
 
 	public void setHeader(String arg0, Object arg1) {
-		// TODO Auto-generated method stub w
+		// TODO Auto-generated method stub
 		
 		headers."$arg0" = arg1
 
