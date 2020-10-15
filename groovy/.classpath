@@ -36,6 +36,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/macsammy/Downloads/com.sap.it.public.generic.api-2.20.0.jar"/>
+	<classpathentry kind="lib" path="/Users/macsammy/Downloads/cloud.integration.script.apis-1.36.1 (2).jar"/>
 	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
