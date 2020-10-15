@@ -1,4 +1,4 @@
-package groovy
+package groovyHelper
 
 import groovy.json.*
 
@@ -36,3 +36,18 @@ def String slurp(jstring) {
 }
 
 slurp(build('jon','doe','ny'))
+
+def map = [:]
+def newmap = [:]
+newmap.'onekey' = 'oneval'
+
+map.'one' = 'val1'
+map.'two' = 'val2'
+map.'three' = 'val3'
+
+println map
+
+
+map.each { newmap << it }
+
+println newmap

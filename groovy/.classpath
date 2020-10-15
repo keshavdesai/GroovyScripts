@@ -24,6 +24,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="src/main/groovy"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -37,6 +38,8 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/macsammy/Downloads/com.sap.it.public.generic.api-2.20.0.jar"/>
 	<classpathentry kind="lib" path="/Users/macsammy/Downloads/cloud.integration.script.apis-1.36.1 (2).jar"/>
+	<classpathentry kind="lib" path="pom.xml"/>
 	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
