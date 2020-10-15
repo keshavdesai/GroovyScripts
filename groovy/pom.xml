@@ -4,10 +4,25 @@
   <artifactId>groovy</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  <dependency>
-    <groupId>org.codehaus.groovy</groupId>
-    <artifactId>groovy-json</artifactId>
-    <version>3.0.5</version>
-</dependency>
+	  <dependency>
+	    <groupId>org.codehaus.groovy</groupId>
+	    <artifactId>groovy-json</artifactId>
+	    <version>3.0.5</version>
+	  </dependency>
+	  <dependency>
+	  	<groupId>javax.activation</groupId>
+	  	<artifactId>activation</artifactId>
+	  	<version>1.1</version>
+	  </dependency>
+	  <dependency>
+	  	<groupId>org.apache.camel</groupId>
+	  	<artifactId>camel-attachments</artifactId>
+	  	<version>3.0.0-RC2</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.apache.camel</groupId>
+		<artifactId>camel-core</artifactId>
+		<version>2.19.4</version>
+	  </dependency>	  	  
   </dependencies>
 </project>

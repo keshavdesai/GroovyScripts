@@ -1,7 +1,7 @@
-package groovy
+package groovyHelper
 
 /**@
- USE alt+shift+x and press G to run as Groovy Script
+ USE alt+shift+x and press G to run as Groovy Script 
  */
 
 
@@ -26,8 +26,12 @@ println somestr.getClass()
 /**@
  * Some class groovydoc for Foo
  */
+
+groovyHelperFoo {
+=======
 class Foo {
 	
+
 	/**@
 	 * Some method groovydoc for bar
 	 */
